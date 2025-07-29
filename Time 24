@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int h =s.nextInt();
+        int m =s.nextInt();
+        int se =s.nextInt();
+        int exs = se/60;
+        int rs = se%60;
+        m = m+exs;
+        int a=m/60;
+        int b=m%60;
+        int hr=h + a;
+        System.out.println("Total Number of hours is "+hr);
+        System.out.println("Total Number of minutes is "+b);
+        System.out.println("Total Number of seconds is "+rs);
+        
+    }
+}
