@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s =new Scanner(System.in);
+        String x=s.nextLine();
+        int ar=s.nextInt();
+        int cgp=s.nextInt();
+        if(ar == 1 && cgp>=70 || (ar==1 || ar==2) && cgp>=75 ){
+            System.out.println("Name of the Student:"+x);
+            System.out.println(x+" is Eligible for Placement");
+        }else{
+            System.out.println("Name of the Student:"+x);
+            System.out.println(x+" is Not Eligible for Placement");
+            
+        }
+    }
+}
