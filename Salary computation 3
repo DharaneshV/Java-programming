@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s = new Scanner(System.in);
+        int sal=s.nextInt();
+        if (sal<=15000){
+            double hra=0.15*sal;
+            double da=0.9*sal;
+            double tot=sal+hra+da;
+            System.out.printf("%.2f\n",tot);
+        }else{
+            double hra=5000;
+            double da=0.98*sal;
+            double tot=sal+hra+da;
+            System.out.printf("%.2f\n",tot);
+        }
+    }
+}
